@@ -21,3 +21,21 @@
 
 # 코딩 테스트 응시자 설문
 # 파이썬 사용 비율 높음, 표준 라이브러리 많음
+
+# 온라인 개발 환경(Python)
+# 리플릿 : https://repl.it/languages/python3
+# 파이썬 튜터 : https://pythontutor.com/visualize.html
+
+# 오프라인 개발 환경(Python)
+# 파이참(PyCharm) : https://www.jetbrains.com/pycharm/download/
+
+# 오프라인 개발 환경(C/C++)
+# Dev C++
+
+# 자신만의 소스코드 관리
+# - 알고리즘 코딩 테스트를 준비하는 과정에서 자신만의 소스코드를 관리하는 습관
+# - 자신(혹은 팀)이 자주 사용하는 알고리즘 코들를 라이브러리화 하면 좋음
+# 팀 노트 예시)https://github.com/ndb796/Python-Competitive-Programming-Team-Notes
+
+# IT 기업 코딩 테스트 최신 출제 경향
+# 구현, 그리디, BFS/DFS, 정렬````
