@@ -48,8 +48,40 @@ print(a[1:4])
 # - 대괄호 안에 조건문과 반복문을 적용하여 리스트를 초기화
 #  - 주의 : 아직 조건문과 반복문에 대한 내용을 배우기 전이라면 대략적인 쓰임새만 이해
 
-# 리스트 컴프리헨션
+# 리스트 컴프리헨션 : 간결하고 짧게 작성할 수 있음
 array = [i for i in range(10)]
 
 print('-- List Comprehension --')
 print(array)
+
+print('-- List Comprehension 예제 --')
+# 0부터 19까지의 수 중에서 홀수만 포함하는 리스트
+array = [i for i in range(20) if i % 2 == 1]
+print(array)
+
+# 1부터 9까지의 수들의 제곱 값을 포함하는 리스트
+array = [i * i for i in range(1, 10)]
+print(array)
+
+print('-- List Comprehension VS 일반적인 코드 --')
+# 코드 1 : 리스트 컴프리헨션
+# 0부터 19까지의 수 중에서 홀수만 포함하는 리스트
+array = [i for i in range(20) if i % 2 == 1]
+print(array)
+
+# 코드 2 : 일반적인 코드
+array = []
+for i in range(20):
+    if i % 2 == 1:
+        array.append(i)
+
+print(array)
+
+print('-- List Comprehension의 특징 --')
+# 2차원 리스트를 초기화할 때 효과적으로 사용
+# 특히 N X M 크기의 2차원 리스트를 한 번에 초기화할 때 유용
+#     - 예시 : array = [[0] * m for_in range(n)]
+
+# 만약 2차원 리스트를 초기화할 때 다음과 같이 작성하면 좋지 않음
+#     - 예시 : array[[0] * m] * n
+#     - 위 코드는 전체 리스트 안에 포함된 각 리스트가 모두 같은 객체로 인식
